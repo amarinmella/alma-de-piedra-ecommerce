@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "oro-acento": "#D4AF37", "surface": "#fbf9f4", "on-surface": "#1b1c19", "on-background": "#1b1c19", "primary-fixed": "#eee1cf", "arena-claro": "#E8E0D3", "tertiary-fixed-dim": "#cdc6b9", "on-tertiary-container": "#fcf3e6", "crema-suave": "#F8F6F1", "surface-container-highest": "#e4e2dd", "error": "#ba1a1a", "inverse-surface": "#30312e", "beige-piedra": "#BDB39D", "tertiary-container": "#746f64", "on-error": "#ffffff", "on-primary-fixed": "#211b10", "outline-variant": "#cec5bb", "taupe-profundo": "#4D463C", "surface-container-high": "#eae8e3", "primary-fixed-dim": "#d1c5b4", "surface-container": "#f0eee9", "surface-dim": "#dbdad5", "on-secondary": "#ffffff", "secondary-fixed": "#ede1ca", "inverse-on-surface": "#f2f1ec", "on-primary-container": "#fff2e3", "surface-variant": "#e4e2dd", "error-container": "#ffdad6", "surface-tint": "#665d50", "surface-bright": "#fbf9f4", "inverse-primary": "#d1c5b4", "on-secondary-fixed-variant": "#4d4635", "primary-container": "#786e60", "alerta-ambar": "#C69C6D", "surface-container-lowest": "#ffffff", "on-secondary-fixed": "#201b0d", "on-surface-variant": "#4c463e", "on-tertiary-fixed": "#1e1b13", "on-secondary-container": "#6a624f", "primary": "#5f5649", "on-primary": "#ffffff", "tertiary": "#5b574d", "background": "#fbf9f4", "secondary-fixed-dim": "#d0c6af", "secondary-container": "#eadfc7", "surface-container-low": "#f5f3ee", "tertiary-fixed": "#eae1d4", "on-tertiary-fixed-variant": "#4b463d", "outline": "#7d766d", "on-tertiary": "#ffffff", "exito-salvia": "#8A9A86", "on-error-container": "#93000a", "on-primary-fixed-variant": "#4e4639", "secondary": "#655e4b", "taupe-oscuro": "#786E60" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "margin": "4rem", "space-xs": "0.375rem", "space-sm": "0.75rem", "gutter-mobile": "1rem", "margin-mobile": "1.25rem", "space-xl": "3.5rem", "space-md": "1.25rem", "space-lg": "2rem", "gutter": "1.5rem" }, fontFamily: { "display-hero": ["Bodoni Moda"], "headline-sm": ["Bodoni Moda"], "headline-lg-mobile": ["Bodoni Moda"], "headline-lg": ["Bodoni Moda"], "display-hero-mobile": ["Bodoni Moda"], "label-meta": ["Plus Jakarta Sans"], "price-lg": ["Plus Jakarta Sans"], "price-md": ["Plus Jakarta Sans"], "label-caps": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-md": ["Bodoni Moda"], "body-lg": ["Plus Jakarta Sans"], "title-editorial": ["Bodoni Moda"] }, fontSize: { "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "500" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-meta": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" }], "price-lg": ["22px", { "lineHeight": "28px", "letterSpacing": "0.02em", "fontWeight": "600" }], "price-md": ["16px", { "lineHeight": "22px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-md": ["26px", { "lineHeight": "34px", "letterSpacing": "0em", "fontWeight": "400" }], "body-lg": ["17px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }], "title-editorial": ["17px", { "lineHeight": "24px", "letterSpacing": "0.08em", "fontWeight": "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen selection:bg-arena-claro selection:text-taupe-profundo"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(120,110,96,0.06)]"><div class="bg-arena-claro/70 text-taupe-profundo text-center py-1.5 px-margin-mobile flex items-center justify-center gap-space-xs"><span class="material-symbols-outlined text-[14px] text-oro-acento">local_shipping</span><p class="font-label-caps text-label-caps uppercase tracking-widest text-taupe-profundo">Despacho RM, V y VI Región $3.500 CLP</p></div><div class="h-20 px-margin-mobile flex items-center justify-between"><button aria-label="Menú de navegación" class="w-11 h-11 flex items-center justify-center text-taupe-oscuro hover:text-taupe-profundo transition-colors focus:outline-none"><span class="material-symbols-outlined text-[24px]">menu</span></button><div class="flex-1 flex flex-col items-center justify-center"><a class="font-title-editorial text-title-editorial uppercase text-taupe-profundo hover:opacity-85 transition-opacity tracking-[0.2em]" data-path="inicio" href="#">Alma De Piedra</a><span class="font-label-caps text-[9px] tracking-[0.25em] text-outline uppercase -mt-0.5">Santiago · Chile</span></div><div class="flex items-center gap-space-xs"><button aria-label="Buscar joyas" class="w-11 h-11 flex items-center justify-center text-taupe-oscuro hover:text-taupe-profundo transition-colors focus:outline-none"><span class="material-symbols-outlined text-[22px]">search</span></button><a aria-label="Bolsa de compras con 2 artículos" class="relative w-11 h-11 flex items-center justify-center text-taupe-oscuro hover:text-taupe-profundo transition-colors focus:outline-none" data-path="carrito" href="#"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-2 right-2 bg-taupe-profundo text-crema-suave font-label-meta text-[10px] w-4 h-4 rounded-full flex items-center justify-center leading-none ring-1 ring-surface">2</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-0.5 shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-28 pb-28 bg-surface px-margin-mobile"><div class="flex flex-col w-full pb-10 space-y-8">
+<!-- Editorial Mobile Hero -->
+<section class="relative w-full rounded-xl overflow-hidden shadow-xl bg-surface-container-low">
+<div class="relative w-full h-[460px] overflow-hidden">
+<img class="w-full h-full object-cover object-center" data-alt="Editorial close-up of an elegant Latina woman with gentle natural sunlight in Santiago Chile, softly wearing layered delicate 18k gold necklaces adorned with raw rose quartz and moonstone minerals. Warm ivory, sand, and cream atmosphere with tones of warm beige and muted taupe. Soft organic depth of field, high-fashion artisan jewelry magazine aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc8gHBBMFwEbKV9joHmADeMWedU_5JW7BPcYnu9_yeR3mC4714VK8uxVFDoZA-Dh2xqYrSr8zbyvq3cRzkU3mLl4tFeiBHW2e3maeJxQkNELtx-hD10o6T_Vp4-jDBj8k4_pM1MLOr_ejxxlwcLHHIa_yoE3J6WGYGHXgwhG6Kw_o6vRgFKg4RxTR_hvMAZE97r3D2SINW4-4zm93f3QdLk6DaHs55LaRRNZd6AVP-"/>
+<!-- Gradient Scrim for readable high-contrast warm luxury -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/60 to-transparent"></div>
+<!-- Subtle top floating badge -->
+<div class="absolute top-4 left-4 flex items-center gap-1.5 px-3 py-1 bg-surface/90 backdrop-blur-md rounded-full shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-oro-acento" style="font-variation-settings: 'FILL' 1;">arrow_back_ios_new</span>
+<span class="font-label-caps text-label-caps text-taupe-profundo uppercase tracking-widest">Edición Limitada</span>
+</div>
+</div>
+<div class="relative -mt-32 px-5 pb-6 flex flex-col z-10">
+<div class="flex items-center gap-2 mb-2">
+<span class="font-label-caps text-[10px] tracking-[0.2em] text-taupe-oscuro uppercase">Alma De Piedra Joyas</span>
+<span class="w-1.5 h-1.5 rounded-full bg-oro-acento"></span>
+<span class="font-label-caps text-[10px] tracking-[0.2em] text-outline uppercase">Santiago</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2.5 leading-tight">
+        La elegancia serena de la piedra y el metal.
+      </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-5 line-clamp-3">
+        Joyas artesanales concebidas como amuletos cotidianos. Metales enchapados nobles y piedras minerales seleccionadas a mano en Santiago de Chile.
+      </p>
+<!-- Editorial highlights -->
+<div class="flex items-center gap-3 mb-5 py-2 px-3 bg-arena-claro/40 rounded-lg backdrop-blur-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-taupe-profundo">verified</span>
+<span class="font-label-meta text-label-meta text-taupe-profundo">Oro 18k &amp; Plata 925</span>
+</div>
+<span class="text-beige-piedra text-xs opacity-60">•</span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-oro-acento">grain</span>
+<span class="font-label-meta text-label-meta text-taupe-profundo">Piedras Genuinas</span>
+</div>
+</div>
+<!-- Action buttons -->
+<div class="flex items-center gap-2.5">
+<a class="flex-1 h-12 bg-taupe-oscuro hover:bg-taupe-profundo text-crema-suave rounded flex items-center justify-center gap-2 shadow-md transition-all active:scale-[0.98]" href="#">
+<span class="font-label-caps text-label-caps tracking-widest uppercase font-semibold">Explorar Colección</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<a class="px-4 h-12 bg-surface-container-high text-taupe-profundo hover:bg-arena-claro rounded-full flex items-center justify-center transition-all active:scale-[0.98]" href="#filosofia">
+<span class="font-label-caps text-label-caps uppercase tracking-wider">Nuestra Esencia</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Value Propositions Carousel / Cards -->
+<section class="w-full">
+<div class="flex gap-3 overflow-x-auto no-scrollbar pb-1 snap-x snap-mandatory">
+<!-- Card 1: Despacho Fijo -->
+<div class="min-w-[240px] max-w-[260px] snap-start p-3.5 bg-crema-suave rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center gap-2.5 mb-2">
+<div class="w-8 h-8 rounded-full bg-arena-claro flex items-center justify-center text-taupe-profundo shrink-0">
+<span class="material-symbols-outlined text-[18px]">local_shipping</span>
+</div>
+<span class="font-label-caps text-[10px] tracking-wider uppercase text-taupe-profundo font-semibold">Tarifa Preferencial</span>
+</div>
+<p class="font-body-sm text-body-sm text-taupe-profundo leading-snug">
+          Despacho Fijo <strong>$3.500 CLP</strong> en Región Metropolitana, V y VI Región.
+        </p>
+</div>
+<!-- Card 2: Blue Express -->
+<div class="min-w-[240px] max-w-[260px] snap-start p-3.5 bg-crema-suave rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center gap-2.5 mb-2">
+<div class="w-8 h-8 rounded-full bg-arena-claro flex items-center justify-center text-taupe-profundo shrink-0">
+<span class="material-symbols-outlined text-[18px]">flight_takeoff</span>
+</div>
+<span class="font-label-caps text-[10px] tracking-wider uppercase text-taupe-profundo font-semibold">Cobertura Nacional</span>
+</div>
+<p class="font-body-sm text-body-sm text-taupe-profundo leading-snug">
+          Envíos seguros a todo Chile vía <strong>Blue Express</strong> con seguimiento en vivo.
+        </p>
+</div>
+<!-- Card 3: Transferencia -->
+<div class="min-w-[240px] max-w-[260px] snap-start p-3.5 bg-crema-suave rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center gap-2.5 mb-2">
+<div class="w-8 h-8 rounded-full bg-arena-claro flex items-center justify-center text-taupe-profundo shrink-0">
+<span class="material-symbols-outlined text-[18px]">account_balance</span>
+</div>
+<span class="font-label-caps text-[10px] tracking-wider uppercase text-taupe-profundo font-semibold">Compra Transparente</span>
+</div>
+<p class="font-body-sm text-body-sm text-taupe-profundo leading-snug">
+          Pago por <strong>Transferencia</strong> con comprobante y validación en menos de 2h.
+        </p>
+</div>
+</div>
+</section>
+<!-- Categories 2x2 Grid -->
+<section class="w-full">
+<div class="flex items-baseline justify-between mb-3 px-1">
+<div>
+<p class="font-label-caps text-[10px] tracking-[0.2em] text-outline uppercase">Catálogo de Autor</p>
+<h2 class="font-headline-sm text-headline-sm text-taupe-profundo">Nuestras Creaciones</h2>
+</div>
+<a class="font-label-caps text-label-caps text-taupe-oscuro hover:text-taupe-profundo underline underline-offset-4 tracking-wider uppercase" href="#">Ver todo</a>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<!-- Categoria 1: Collares Oro -->
+<a class="group relative rounded-xl overflow-hidden shadow-sm bg-surface-container aspect-[3/4] flex flex-col justify-end p-3 transition-transform active:scale-[0.98]" href="#">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Delicate 18k gold plated pendant necklace resting over sunlit smooth sand fabric. Warm glistening gold reflection, minimal artisan organic texture, warm beige and soft cream mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRetqB-_UvAkBxbZbm1Ae5asbibUY9L2RHatYzE0pJKX7re8e70Wsmb29rNthnxfXOsDTkRXvjRRrSIz5MTtbM7UjQBZ3tj3eOvKAoyt8QZGzOpXMi2zHNMuaKmQkYoqhmJCQIi9y0XJq2GpCgI8NsRYfi90IneY3um3-mW7vHc3-uZW5raMLiK5bOJ2TE4i0VSK_LNrzff0BIn4Ji09XbjbBp4CTRhS3g4Mcs4C34"/>
+<div class="absolute inset-0 bg-gradient-to-t from-taupe-profundo/85 via-taupe-profundo/25 to-transparent"></div>
+<div class="relative z-10">
+<span class="font-label-meta text-[10px] text-arena-claro uppercase tracking-widest">Enchape 18k</span>
+<h3 class="font-headline-sm text-[16px] leading-tight text-crema-suave">Collares enchapados en oro</h3>
+</div>
+</a>
+<!-- Categoria 2: Collares Plata -->
+<a class="group relative rounded-xl overflow-hidden shadow-sm bg-surface-container aspect-[3/4] flex flex-col justify-end p-3 transition-transform active:scale-[0.98]" href="#">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Sterling silver 925 delicate artisanal necklace with cool lunar reflections draped gracefully over a pale stone pedestal. Minimalist high-end handcrafted jewelry styling, soft natural light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFBpi-8EXAAH8Pq-4Y5UgFAi0MAFrhWxbFxs9e_h80l8SB8N3ajhbQKG5hOuKjXzdw9NtUVlkEJRSkfbXIbNUKouaPLX04r1wfpOtR8UD6P-asnQK9JuAduEZ5pf0AOKuY2kGpz4HlkS0uoO9XCRTygrMt3rNmMbB6MxzVYAT1jqzLgou0lRrs0oB_kQQgMtXzXpQz7X8mPmlrYCHbKzyOB37Pddv6tdacgYXzzu5V"/>
+<div class="absolute inset-0 bg-gradient-to-t from-taupe-profundo/85 via-taupe-profundo/25 to-transparent"></div>
+<div class="relative z-10">
+<span class="font-label-meta text-[10px] text-arena-claro uppercase tracking-widest">Plata 925</span>
+<h3 class="font-headline-sm text-[16px] leading-tight text-crema-suave">Collares en plata</h3>
+</div>
+</a>
+<!-- Categoria 3: Chokers -->
+<a class="group relative rounded-xl overflow-hidden shadow-sm bg-surface-container aspect-[3/4] flex flex-col justify-end p-3 transition-transform active:scale-[0.98]" href="#">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Natural irregular river freshwater pearls choker with tiny gold spacers on soft linen background. Warm tactile elegance, peaceful quiet luxury jewelry aesthetics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBN0PwvaZUCdGXZG7b9xjV9UTH0godjYxbFssaebfAgAJFi25FqhmkshApdR0I0qudzEACHeZH5--M5zgZ84D2kid_Vm5dGZkyXFrsELbrDdB4HMnnoY6t87Wz3MOTbhzusakayvIj0Pk11KQSrQq5y7WlgCWwz_D-_TiYMQrs__0t-_EvYVGLgzGuBow9kqbNXEr5gekR2tDnS49aa5Ry6P1tDVaGEb0X3bgJ9l04o"/>
+<div class="absolute inset-0 bg-gradient-to-t from-taupe-profundo/85 via-taupe-profundo/25 to-transparent"></div>
+<div class="relative z-10">
+<span class="font-label-meta text-[10px] text-arena-claro uppercase tracking-widest">Perlas de Río</span>
+<h3 class="font-headline-sm text-[16px] leading-tight text-crema-suave">Chokers</h3>
+</div>
+</a>
+<!-- Categoria 4: Piedras Naturales -->
+<a class="group relative rounded-xl overflow-hidden shadow-sm bg-surface-container aspect-[3/4] flex flex-col justify-end p-3 transition-transform active:scale-[0.98]" href="#">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Natural Chilean raw lapis lazuli deep blue mineral and gentle raw rose quartz stones carved into organic pendants, lying on an artisan ceramic tray. Warm earth tones, macro jewelry photograph." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsyO7zLwodqnzIgWR8LPj1QOiUW0YR3HPgygX4maLpNzb69S5sB50DYeyhaROlSHfBUi_m4d8IAi5XvfcykLOXFwflkIk4CH2373X5-H7HNsFDNaq090oWZWiG0bbjlf7K3QAIBk9vVTeYL5IdOCcXKP4x9kXNUDU4qOmU_mBHv37a5acztaESHT0IoFTvBqbHhYgnDAanq3hMLMn8Q2hj3oBiWfCRPqJQVr5e3iJu"/>
+<div class="absolute inset-0 bg-gradient-to-t from-taupe-profundo/85 via-taupe-profundo/25 to-transparent"></div>
+<div class="relative z-10">
+<span class="font-label-meta text-[10px] text-arena-claro uppercase tracking-widest">Gemas Chilenas</span>
+<h3 class="font-headline-sm text-[16px] leading-tight text-crema-suave">Piedras naturales</h3>
+</div>
+</a>
+</div>
+</section>
+<!-- Curated Featured Jewels (2-column editorial cards) -->
+<section class="w-full">
+<div class="flex items-center justify-between mb-3 px-1">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-oro-acento">hotel_class</span>
+<p class="font-label-caps text-[10px] tracking-[0.2em] text-outline uppercase">Selección Curada</p>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-taupe-profundo">Piezas Esenciales</h2>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-taupe-oscuro hover:text-taupe-profundo transition-colors" id="toastTriggerSample">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<!-- Joya 1 -->
+<div class="flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-sm group">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-arena-claro/30">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Delicate handcrafted necklace with a soft raw rose quartz stone suspended on an ultra thin 18k gold chain, warm editorial light, tactile creamy background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCR50i_H-UUnZTGrMXxyJC72EqdZYeWFFGCXmKGCvLRd4ooZr30wA__dQ3DaTQ9wCc9B2EMB0H3RtNZVYjGNh5ecn_5yCuxgdr7TtalpnKn51lwhsjuQCW2lYBP5714SWgcVOK7br0VIY1lniSDOYcRjwLnReYnmJJ0Lg--8MnlqJXyIOgc7NPxZOVqlT0s5XCral27XiLMkCaHU67MD3jt1xzjFWp9SdUcGE75DMj2"/>
+<span class="absolute top-2.5 left-2.5 px-2 py-0.5 bg-surface/90 backdrop-blur-sm rounded font-label-meta text-[10px] text-taupe-profundo font-semibold">
+            Amor Propio
+          </span>
+<button aria-label="Añadir Collar Cuarzo Rosa" class="absolute bottom-2.5 right-2.5 w-8 h-8 bg-surface-container-lowest/95 text-taupe-profundo rounded-full shadow-md flex items-center justify-center hover:bg-taupe-profundo hover:text-crema-suave transition-colors active:scale-90">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<div class="p-3 flex flex-col flex-1 justify-between">
+<div>
+<span class="font-label-meta text-[11px] text-outline block mb-0.5">Enchape Oro 18k</span>
+<h4 class="font-body-md text-[14px] font-semibold text-taupe-profundo leading-tight line-clamp-1 mb-1">
+              Collar Cuarzo Rosa
+            </h4>
+</div>
+<div class="flex items-baseline justify-between pt-1">
+<span class="font-price-md text-price-md text-taupe-profundo">$28.900</span>
+<span class="font-label-caps text-[10px] text-outline uppercase">CLP</span>
+</div>
+</div>
+</div>
+<!-- Joya 2 -->
+<div class="flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-sm group">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-arena-claro/30">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Artisanal freshwater river pearls choker with genuine 925 sterling silver central bead and clasp, editorial luxury jewelry shot on warm limestone surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAykuX3R_k4kpHc2R6Iehx2x3nL6OT-AVST9lIqaqcHZQD99EuKDuEpAp8u6OKfXJy34_Wm1qCUGIeF2dJUT1vjLQhWDpfTBHD0UTUPXd-nlwmhMo_Xf-ngk1tUL1ScNm5Ssm356JqpY3fBbLVBgN_iBRdYhP8bTb8qR9I46JVK-dQ8Q7tUJsD1CYVCvde9OsdTovMrHKulNM3nlPwHrv6UH-3Pr8-C75F19eRpd0Jk"/>
+<span class="absolute top-2.5 left-2.5 px-2 py-0.5 bg-surface/90 backdrop-blur-sm rounded font-label-meta text-[10px] text-taupe-profundo font-semibold">
+            Favorito
+          </span>
+<button aria-label="Añadir Choker Perlas" class="absolute bottom-2.5 right-2.5 w-8 h-8 bg-surface-container-lowest/95 text-taupe-profundo rounded-full shadow-md flex items-center justify-center hover:bg-taupe-profundo hover:text-crema-suave transition-colors active:scale-90">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<div class="p-3 flex flex-col flex-1 justify-between">
+<div>
+<span class="font-label-meta text-[11px] text-outline block mb-0.5">Plata 925 &amp; Perlas</span>
+<h4 class="font-body-md text-[14px] font-semibold text-taupe-profundo leading-tight line-clamp-1 mb-1">
+              Choker Perlas de Río
+            </h4>
+</div>
+<div class="flex items-baseline justify-between pt-1">
+<span class="font-price-md text-price-md text-taupe-profundo">$32.500</span>
+<span class="font-label-caps text-[10px] text-outline uppercase">CLP</span>
+</div>
+</div>
+</div>
+<!-- Joya 3 -->
+<div class="flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-sm group">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-arena-claro/30">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Luminescent moonstone pendant dangling on a minimalist gold chain, blue and white iridescent optical refraction, quiet luxury artisan aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzRSKXl-59e8TMFk0Bi9h-FHMpBC633APrOB5lFgbqKpUVzjxUSAkinuqcDgVopTiPwM_MGNoJ3D7a6k6ACOVLaCsEwGNljhoDbmqgIciVutqfkXW_V2WQtkP3WVt3Y_ItQfEQjtyupGuMpEOt7Vnupi6SgDBwAqGL9lzqezSojSCPMKAneWiLGOzHwFqni5C5brs-ilGsy0jtrw46wQhWYsbm_V3X9H9fZeetBSwQ"/>
+<span class="absolute top-2.5 left-2.5 px-2 py-0.5 bg-surface/90 backdrop-blur-sm rounded font-label-meta text-[10px] text-taupe-profundo font-semibold">
+            Intuición
+          </span>
+<button aria-label="Añadir Collar Piedra Luna" class="absolute bottom-2.5 right-2.5 w-8 h-8 bg-surface-container-lowest/95 text-taupe-profundo rounded-full shadow-md flex items-center justify-center hover:bg-taupe-profundo hover:text-crema-suave transition-colors active:scale-90">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<div class="p-3 flex flex-col flex-1 justify-between">
+<div>
+<span class="font-label-meta text-[11px] text-outline block mb-0.5">Piedra Luna Auténtica</span>
+<h4 class="font-body-md text-[14px] font-semibold text-taupe-profundo leading-tight line-clamp-1 mb-1">
+              Amuleto Piedra Luna
+            </h4>
+</div>
+<div class="flex items-baseline justify-between pt-1">
+<span class="font-price-md text-price-md text-taupe-profundo">$29.900</span>
+<span class="font-label-caps text-[10px] text-outline uppercase">CLP</span>
+</div>
+</div>
+</div>
+<!-- Joya 4 -->
+<div class="flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-sm group">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-arena-claro/30">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Chilean raw lapis lazuli choker with natural golden pyrite flecks mounted with gold findings on a soft taupe linen background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCffa7htVrrVWwokYbTBFu6zABYJgxIALE2U3PRwlXwOvFoCgGqzJy1XERZOUedFkF0_YDSJ1JtFtpUpv6btVxUyQFVPnCkgqpN4O5ZmGKR_UtLvc8R90ROe-7ZdSZ2FEdOWEiFWdkHQ-C5w8W2r7EqHtDSiINA7VrjtGumTb6ZNzgV_HFFi2pbKXt8sGwIblJ000fCzS1IZlSYJxtUo2OwYFg2rK1tvSTZqkUjoJcJ"/>
+<span class="absolute top-2.5 left-2.5 px-2 py-0.5 bg-oro-acento/20 text-taupe-profundo backdrop-blur-sm rounded font-label-meta text-[10px] font-semibold">
+            Cordillera
+          </span>
+<button aria-label="Añadir Gargantilla Lapislázuli" class="absolute bottom-2.5 right-2.5 w-8 h-8 bg-surface-container-lowest/95 text-taupe-profundo rounded-full shadow-md flex items-center justify-center hover:bg-taupe-profundo hover:text-crema-suave transition-colors active:scale-90">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<div class="p-3 flex flex-col flex-1 justify-between">
+<div>
+<span class="font-label-meta text-[11px] text-outline block mb-0.5">Lapislázuli Chileno</span>
+<h4 class="font-body-md text-[14px] font-semibold text-taupe-profundo leading-tight line-clamp-1 mb-1">
+              Gargantilla Lapislázuli
+            </h4>
+</div>
+<div class="flex items-baseline justify-between pt-1">
+<span class="font-price-md text-price-md text-taupe-profundo">$34.000</span>
+<span class="font-label-caps text-[10px] text-outline uppercase">CLP</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Brand Craft & Philosophy Story Card -->
+<section class="relative w-full rounded-xl overflow-hidden bg-arena-claro/40 p-5 shadow-sm" id="filosofia">
+<div class="flex flex-col gap-4">
+<div class="relative w-full h-44 rounded-lg overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Artisan jeweler hands working with precision jewelry pliers, raw crystals, and delicate gold chains at a warm wooden studio workbench in Santiago, Chile. Sunbeam cutting through soft atmospheric dust particles." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNuUMu6O1i8ySgi122KjOyK1CTOgNPGtgclTRyVoE6fnPy9uGxMdSzABhO23RyS-MXVj9XAVXM8XFrRB-6J8Xvl8E0m1uPorNmvp0G14RmWq2Rkdk46x8NqCF4T-dNbqpxbPGjR9n3_8eXrwORuf9Syowicf93nsRvDAiMd0vvrlMwLrY5cR6nVAduQeTXHmJk8O8FNG_kXjbCvwe6nIT3Gces4WX9InOvFSBcy3ir"/>
+<div class="absolute inset-0 bg-gradient-to-t from-taupe-profundo/60 to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-crema-suave">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-oro-acento">workspace_premium</span>
+<span class="font-label-caps text-[10px] tracking-wider uppercase">Taller Alma De Piedra</span>
+</div>
+<span class="font-label-meta text-[10px] text-arena-claro">Providencia, Stgo</span>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2.5 py-0.5 bg-crema-suave rounded-full font-label-caps text-[9px] uppercase tracking-wider text-taupe-profundo">
+            100% Piedras Auténticas
+          </span>
+<span class="px-2.5 py-0.5 bg-exito-salvia/20 rounded-full font-label-caps text-[9px] uppercase tracking-wider text-taupe-profundo">
+            Confección Local
+          </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-taupe-profundo mb-2">
+          El alma en cada pieza: artesanía meditativa y nobleza mineral
+        </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-4">
+          Cada collar y choker se engarza individualmente honrando el peso, la temperatura y la textura de la piedra. Diseñamos para que sientas la calma del mineral reposando sobre tu piel día tras día.
+        </p>
+<!-- Artisanal Promise indicators -->
+<div class="grid grid-cols-2 gap-2 pt-2">
+<div class="flex items-start gap-2 p-2.5 bg-surface rounded">
+<span class="material-symbols-outlined text-[18px] text-oro-acento shrink-0">spa</span>
+<div>
+<p class="font-label-caps text-[10px] uppercase font-semibold text-taupe-profundo">Sin Prisas</p>
+<p class="font-label-meta text-[10px] text-outline">Producción de lotes pequeños</p>
+</div>
+</div>
+<div class="flex items-start gap-2 p-2.5 bg-surface rounded">
+<span class="material-symbols-outlined text-[18px] text-taupe-profundo shrink-0">inventory_2</span>
+<div>
+<p class="font-label-caps text-[10px] uppercase font-semibold text-taupe-profundo">Empaque Regalo</p>
+<p class="font-label-meta text-[10px] text-outline">Bolsa de lino y tarjeta botánica</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- WhatsApp Direct Advisory Card (Human & Friendly) -->
+<section class="w-full bg-crema-suave rounded-xl p-4 shadow-sm flex items-center gap-3.5">
+<div class="w-12 h-12 rounded-full bg-exito-salvia/20 text-taupe-profundo flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">support_agent</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="font-label-caps text-[10px] tracking-wider uppercase text-taupe-oscuro font-semibold">Asesoría Personalizada</p>
+<h4 class="font-body-md text-[14px] font-semibold text-taupe-profundo leading-tight truncate">
+        ¿Dudas sobre largos o gemas?
+      </h4>
+<p class="font-body-sm text-[12px] text-outline leading-snug">
+        Escríbenos y te mostramos las piezas en vivo por video o foto.
+      </p>
+</div>
+<a aria-label="Abrir WhatsApp para asesoría" class="px-3 py-2 bg-taupe-oscuro hover:bg-taupe-profundo text-crema-suave rounded font-label-caps text-[10px] tracking-wider uppercase shrink-0 transition-transform active:scale-95 flex items-center gap-1" href="https://wa.me/56900000000" rel="noopener noreferrer" target="_blank">
+<span>WhatsApp</span>
+<span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</a>
+</section>
+<!-- Mobile Footer Section (Consistent with Brand Guidelines) -->
+<footer class="w-full pt-4 pb-6 flex flex-col items-center text-center">
+<!-- Monogram / Emblem -->
+<div class="w-10 h-10 rounded-full bg-arena-claro/50 flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-[20px] text-taupe-profundo">diamond</span>
+</div>
+<p class="font-title-editorial text-[15px] uppercase tracking-[0.25em] text-taupe-profundo mb-1">
+      Alma De Piedra
+    </p>
+<p class="font-label-caps text-[9px] tracking-[0.2em] text-outline uppercase mb-4">
+      Joyería Consciente · Hecho en Chile
+    </p>
+<!-- Essential Links -->
+<div class="flex flex-wrap justify-center gap-x-4 gap-y-2 mb-5">
+<a class="font-label-caps text-[11px] text-taupe-oscuro hover:text-taupe-profundo uppercase tracking-wider" href="#">Cuidado de Joyas</a>
+<span class="text-beige-piedra text-xs opacity-50">•</span>
+<a class="font-label-caps text-[11px] text-taupe-oscuro hover:text-taupe-profundo uppercase tracking-wider" href="#">Guía de Medidas</a>
+<span class="text-beige-piedra text-xs opacity-50">•</span>
+<a class="font-label-caps text-[11px] text-taupe-oscuro hover:text-taupe-profundo uppercase tracking-wider" href="#">Políticas de Envío</a>
+</div>
+<!-- Security & Chile Local Payments note -->
+<div class="px-4 py-2 bg-surface-container rounded-full flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-[14px] text-exito-salvia" style="font-variation-settings: 'FILL' 1;">format_image_left</span>
+<span class="font-label-meta text-[11px] text-taupe-profundo">Transferencia Bancaria Protegida · Envío Asegurado</span>
+</div>
+<p class="font-label-meta text-[11px] text-outline/80">
+      © 2025 Alma De Piedra Joyas. Todos los derechos reservados.
+    </p>
+</footer>
+</div>
+<script>
+  // Micro-interaction for quick cart feedback
+  document.querySelectorAll('button[aria-label^="Añadir"]').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      const icon = this.querySelector('.material-symbols-outlined');
+      if (icon) {
+        const prevText = icon.textContent;
+        icon.textContent = 'check';
+        this.classList.add('bg-exito-salvia', 'text-white');
+        
+        // Gentle haptic feedback simulation
+        if (navigator.vibrate) navigator.vibrate(20);
+        
+        setTimeout(() => {
+          icon.textContent = prevText;
+          this.classList.remove('bg-exito-salvia', 'text-white');
+        }, 1400);
+      }
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(120,110,96,0.06)]" data-active-classes="text-taupe-profundo font-semibold scale-105"><div class="flex justify-around items-center h-16 px-gutter-mobile"><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 transition-all duration-200 text-taupe-profundo font-semibold scale-105" data-path="inicio" href="#"><span class="material-symbols-outlined text-[20px]">home</span><span class="font-label-caps text-[10px] tracking-wider uppercase">Inicio</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-taupe-profundo transition-all duration-200" data-path="colecciones" href="#"><span class="material-symbols-outlined text-[20px]">diamond</span><span class="font-label-caps text-[10px] tracking-wider uppercase">Joyas</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-taupe-profundo transition-all duration-200" data-path="contacto-artesanal" href="#"><span class="material-symbols-outlined text-[20px]">chat</span><span class="font-label-caps text-[10px] tracking-wider uppercase">Asesoría</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-taupe-profundo transition-all duration-200" data-path="mi-cuenta" href="#"><span class="material-symbols-outlined text-[20px]">account_circle</span><span class="font-label-caps text-[10px] tracking-wider uppercase">Cuenta</span></a></div></nav></body></html>
