@@ -205,3 +205,82 @@ add_action("wp_footer", function () {
     $url  = "https://wa.me/{$phone}?text={$text}";
     echo '<a class="adp-wsp-float" href="' . esc_url($url) . '" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp a Alma De Piedra">WhatsApp</a>';
 });
+
+/**
+ * SEO base, Open Graph (WhatsApp/Instagram) y Schema JewelryStore si no hay plugin SEO activo.
+ */
+add_action("wp_head", function () {
+    if (defined("WPSEO_VERSION") || defined("RANK_MATH_VERSION")) {
+        return;
+    }
+
+    $site_name = get_bloginfo("name");
+    $uploads   = wp_upload_dir();
+    $default_img = trailingslashit($uploads["baseurl"]) . "2026/11/alma-hero.jpg";
+
+    $title = wp_get_document_title();
+    $desc  = "Joyas que habitan tu piel. Piezas seleccionadas en Chile enchapadas en oro 18k y plata 925 con piedras naturales y gemas. Envíos a todo Chile.";
+    $url   = home_url(add_query_arg(array(), $GLOBALS["wp"]->request ?? ""));
+    $type  = "website";
+    $img   = $default_img;
+
+    if (is_front_page()) {
+        $url = home_url("/");
+    } elseif (function_exists("is_product") && is_product()) {
+        $type = "product";
+        $post_id = get_the_ID();
+        $url = get_permalink($post_id);
+        $excerpt = wp_strip_all_tags(get_the_excerpt($post_id));
+        if (!empty($excerpt)) {
+            $desc = wp_trim_words($excerpt, 28, "...");
+        }
+        $thumb = get_the_post_thumbnail_url($post_id, "large");
+        if ($thumb) {
+            $img = $thumb;
+        }
+    } elseif (function_exists("is_product_category") && is_product_category()) {
+        $term = get_queried_object();
+        if ($term && !empty($term->description)) {
+            $desc = wp_strip_all_tags($term->description);
+        }
+    } elseif (is_singular()) {
+        $post_id = get_the_ID();
+        $url = get_permalink($post_id);
+        $content = wp_strip_all_tags(strip_shortcodes(get_post_field("post_content", $post_id)));
+        if (!empty($content)) {
+            $desc = wp_trim_words($content, 26, "...");
+        }
+    }
+
+    echo '<meta name="description" content="' . esc_attr($desc) . '" />' . "\n";
+    echo '<meta property="og:locale" content="es_CL" />' . "\n";
+    echo '<meta property="og:site_name" content="' . esc_attr($site_name) . '" />' . "\n";
+    echo '<meta property="og:type" content="' . esc_attr($type) . '" />' . "\n";
+    echo '<meta property="og:title" content="' . esc_attr($title) . '" />' . "\n";
+    echo '<meta property="og:description" content="' . esc_attr($desc) . '" />' . "\n";
+    echo '<meta property="og:url" content="' . esc_url($url) . '" />' . "\n";
+    echo '<meta property="og:image" content="' . esc_url($img) . '" />' . "\n";
+    echo '<meta name="twitter:card" content="summary_large_image" />' . "\n";
+    echo '<meta name="twitter:title" content="' . esc_attr($title) . '" />' . "\n";
+    echo '<meta name="twitter:description" content="' . esc_attr($desc) . '" />' . "\n";
+    echo '<meta name="twitter:image" content="' . esc_url($img) . '" />' . "\n";
+
+    if (is_front_page()) {
+        $schema = array(
+            "@context" => "https://schema.org",
+            "@type"    => "JewelryStore",
+            "name"     => $site_name,
+            "description" => $desc,
+            "url"      => home_url("/"),
+            "image"    => $default_img,
+            "priceRange" => "$$",
+            "address"  => array(
+                "@type"           => "PostalAddress",
+                "addressCountry"  => "CL",
+                "addressLocality" => "Santiago",
+            ),
+            "sameAs"   => array("https://www.instagram.com/almadepiedra.cl/"),
+        );
+        echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . '</script>' . "\n";
+    }
+}, 5);
