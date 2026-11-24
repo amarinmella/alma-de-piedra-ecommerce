@@ -64,14 +64,20 @@ h1, h2, h3, .adp-display { font-family: var(--adp-font-display); color: var(--ad
 .adp-bento-card { position: relative; min-height: 380px; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; padding: 28px; text-decoration: none; background-color: var(--adp-surface); box-shadow: 0 2px 8px rgba(120, 110, 96, 0.06); }
 .adp-bento-card--wide { grid-column: span 7; }
 .adp-bento-card--narrow { grid-column: span 5; }
+.adp-bento-card--half { grid-column: span 6; }
+.adp-bento-card--third { grid-column: span 4; }
 .adp-bento-bg { position: absolute; inset: 0; background-size: cover; background-position: center; transition: transform 0.6s ease; }
 .adp-bento-card:hover .adp-bento-bg { transform: scale(1.04); }
-.adp-bento-card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(77,70,60,0.08) 0%, rgba(77,70,60,0.82) 100%); }
+.adp-bento-card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(45,40,34,0.12) 0%, rgba(45,40,34,0.52) 55%, rgba(45,40,34,0.88) 100%); }
 .adp-bento-content { position: relative; z-index: 2; }
-.adp-bento-tag { font-size: 11px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--adp-gold); display: block; margin-bottom: 6px; }
+.adp-bento-tag { display: inline-block; width: fit-content; font-size: 11px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: #F5DF96; background-color: rgba(45, 40, 34, 0.58); padding: 4px 10px; border-radius: 3px; margin-bottom: 8px; }
 .adp-bento-content h3 { font-size: 26px; color: #FFFFFF; margin: 0 0 8px 0; }
-.adp-bento-content p { font-size: 13px; line-height: 1.5; color: rgba(248, 246, 241, 0.92); margin: 0 0 12px 0; max-width: 420px; }
+.adp-bento-content p { font-size: 13px; line-height: 1.5; color: rgba(248, 246, 241, 0.94); margin: 0 0 12px 0; max-width: 420px; }
 .adp-bento-link { font-size: 11px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: #F8F6F1; text-decoration: underline; text-underline-offset: 4px; }
+
+.adp-custom-banner { margin-top: 40px; padding: 28px 32px; background-color: var(--adp-bg); border: 1px solid var(--adp-border); border-radius: 8px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; box-shadow: 0 4px 16px rgba(120, 110, 96, 0.05); }
+.adp-custom-banner h3 { font-size: 24px; margin: 0 0 6px 0; }
+.adp-custom-banner p { font-size: 14px; line-height: 1.55; color: #4c463e; margin: 0; max-width: 620px; }
 
 .adp-split { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px; align-items: center; }
 .adp-split-media img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 8px; box-shadow: var(--adp-shadow); display: block; }
@@ -89,9 +95,72 @@ h1, h2, h3, .adp-display { font-family: var(--adp-font-display); color: var(--ad
 .woocommerce a.button, .woocommerce button.button, .woocommerce input.button { background-color: var(--adp-accent); color: var(--adp-bg); border-radius: 4px; font-family: var(--adp-font-body); font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 12px 20px; }
 .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover { background-color: var(--adp-ink); color: var(--adp-bg); }
 
+@media (max-width: 1024px) and (min-width: 544px) {
+  .adp-front-page .woocommerce ul.products.columns-4,
+  .adp-front-page .woocommerce ul.products.grid-sm-col-3 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+}
+
+.adp-legal-bar { background-color: var(--adp-surface); border-top: 1px solid var(--adp-border); padding: 14px 0; font-size: 12px; color: var(--adp-ink-muted); }
+.adp-legal-inner { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 12px; }
+.adp-legal-bar a { color: var(--adp-ink); text-decoration: none; font-weight: 500; }
+.adp-legal-bar a:hover { text-decoration: underline; }
+#mobile-header .site-title { font-family: var(--adp-font-display); color: var(--adp-ink); font-size: 20px; }
+#mobile-header a.brand:not(:has(img)):not(:has(.site-title))::after { content: "Alma De Piedra"; font-family: var(--adp-font-display); color: var(--adp-ink); font-size: 20px; font-weight: 400; letter-spacing: -0.01em; display: inline-block; padding: 6px 0; }
+
+/* Filtros de categoría en /coleccion/ */
+.adp-cat-filters { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 28px 0; padding-bottom: 18px; border-bottom: 1px solid var(--adp-border); }
+.adp-cat-chip { display: inline-flex; align-items: center; padding: 8px 16px; border-radius: 999px; border: 1px solid var(--adp-stone); background-color: var(--adp-bg); color: var(--adp-ink); font-size: 12px; font-weight: 500; text-decoration: none; transition: all 0.2s ease; }
+.adp-cat-chip:hover { background-color: var(--adp-surface); border-color: var(--adp-accent); }
+.adp-cat-chip.is-active { background-color: var(--adp-accent); border-color: var(--adp-accent); color: var(--adp-bg); }
+
+/* Acordeón de cuidados y despacho en ficha de producto */
+.adp-product-accordion { margin: 24px 0 18px 0; border-top: 1px solid var(--adp-border); }
+.adp-product-accordion details { border-bottom: 1px solid var(--adp-border); }
+.adp-product-accordion summary { cursor: pointer; list-style: none; padding: 14px 0; font-family: var(--adp-font-body); font-size: 13px; font-weight: 600; letter-spacing: 0.04em; color: var(--adp-ink); display: flex; justify-content: space-between; align-items: center; }
+.adp-product-accordion summary::-webkit-details-marker { display: none; }
+.adp-product-accordion summary::after { content: "+"; font-size: 16px; color: var(--adp-accent); font-weight: 400; }
+.adp-product-accordion details[open] summary::after { content: "−"; }
+.adp-acc-body { padding: 0 0 16px 0; font-size: 13px; line-height: 1.6; color: #4c463e; }
+.adp-acc-body p { margin: 0 0 8px 0; }
+.adp-acc-body ul { margin: 0; padding-left: 18px; }
+.adp-acc-body li { margin-bottom: 4px; }
+.adp-inline-link { color: var(--adp-ink); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+
+/* Página de Preguntas Frecuentes y Contacto */
+.adp-faq-wrap { max-width: 820px; margin: 12px 0 32px 0; }
+.adp-contact-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 36px; align-items: start; margin-top: 16px; }
+.adp-contact-card, .adp-contact-info { background-color: var(--adp-surface-low); border: 1px solid var(--adp-border); border-radius: 8px; padding: 28px; }
+.adp-contact-card h3, .adp-contact-info h3 { margin: 0 0 10px 0; font-size: 24px; }
+.adp-contact-intro { font-size: 14px; color: #4c463e; margin: 0 0 20px 0; line-height: 1.6; }
+.adp-contact-form p { margin: 0 0 16px 0; }
+.adp-contact-form label { display: block; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--adp-ink); margin-bottom: 6px; }
+.adp-contact-form input, .adp-contact-form textarea { width: 100%; padding: 11px 14px; border: 1px solid var(--adp-stone); border-radius: 4px; background-color: #FFFFFF; color: var(--adp-ink); font-family: var(--adp-font-body); font-size: 14px; }
+.adp-contact-form input:focus, .adp-contact-form textarea:focus { outline: none; border-color: var(--adp-accent); }
+.adp-alert-success { padding: 14px 16px; border-radius: 6px; background-color: rgba(138, 154, 134, 0.16); border: 1px solid var(--adp-sage); color: var(--adp-ink); font-size: 14px; }
+.adp-alert-error { padding: 12px 14px; border-radius: 6px; background-color: rgba(198, 156, 109, 0.18); border: 1px solid var(--adp-amber); color: var(--adp-ink); font-size: 13px; margin-bottom: 16px; }
+.adp-wsp-float { position: fixed; right: 20px; bottom: 20px; z-index: 999; display: inline-flex; align-items: center; gap: 8px; padding: 12px 18px; border-radius: 999px; background-color: var(--adp-sage); color: #FFFFFF !important; font-family: var(--adp-font-body); font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; box-shadow: 0 8px 24px rgba(77, 70, 60, 0.22); transition: transform 0.2s ease, background-color 0.2s ease; }
+.adp-wsp-float:hover { background-color: var(--adp-ink); transform: translateY(-2px); }
+@media (max-width: 900px) { .adp-contact-grid { grid-template-columns: 1fr; } }
+
+/* Fix contraste, hover y alineación del footer */
+.site-footer .site-bottom-footer-inner-wrap { align-items: center !important; }
+.site-footer .footer-html p { margin: 0 !important; }
+.site-footer .site-footer-bottom-section-2 { display: flex; justify-content: flex-end; align-items: center; }
+.site-footer .footer-social-wrap,
+.site-footer .footer-social-inner-wrap { width: 100%; display: flex; justify-content: flex-end; align-items: center; }
+@media (max-width: 900px) { .site-footer .site-footer-bottom-section-2, .site-footer .footer-social-inner-wrap { justify-content: center; } }
+.site-footer .footer-social-wrap .social-button.footer-social-item { display: inline-flex !important; align-items: center; gap: 8px; line-height: 1.2; background-color: transparent !important; color: var(--adp-ink) !important; border: 1px solid var(--adp-stone); border-radius: 4px; padding: 8px 14px; transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease; }
+.site-footer .footer-social-wrap .social-button.footer-social-item:hover,
+.site-footer .footer-social-wrap .social-button.footer-social-item:focus-visible { background-color: var(--adp-accent) !important; border-color: var(--adp-accent) !important; color: var(--adp-bg) !important; }
+.site-footer .footer-social-wrap .social-button.footer-social-item:hover .social-label,
+.site-footer .footer-social-wrap .social-button.footer-social-item:hover svg,
+.site-footer .footer-social-wrap .social-button.footer-social-item:focus-visible .social-label,
+.site-footer .footer-social-wrap .social-button.footer-social-item:focus-visible svg { color: var(--adp-bg) !important; fill: currentColor; }
+
 @media (max-width: 900px) {
   .adp-values-grid, .adp-split { grid-template-columns: 1fr; }
-  .adp-bento-card--wide, .adp-bento-card--narrow { grid-column: span 12; min-height: 300px; }
+  .adp-bento-card--wide, .adp-bento-card--narrow, .adp-bento-card--half, .adp-bento-card--third { grid-column: span 12; min-height: 300px; }
+  .adp-custom-banner { padding: 24px 20px; }
 }
 
 /* Hover image swap on product cards */
